@@ -1,0 +1,79 @@
+{
+  "name": "@ananay-nag/web-device-info",
+  "version": "1.0.0",
+  "description": "Universal web screen/device info (JS, React, Vue3, Angular, Svelte) with real-time updates",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.js"
+  },
+  "scripts": {
+    "build:lib": "tsup src/index.ts  --dts --minify --format esm,cjs --out-dir dist --tsconfig tsconfig.build.json",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && npm run build:lib",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "device",
+    "screen",
+    "responsive",
+    "mobile",
+    "tablet",
+    "desktop",
+    "browser",
+    "screen-size",
+    "device-size",
+    "angular-screen-size",
+    "react-screen-size",
+    "vue-screen-size",
+    "javascript-screen-size",
+    "Svelte-screen-size",
+    "vanilla-screen-size",
+    "mobile-size",
+    "mobile-screen-size",
+    "web-screen-size",
+    "tab-screen-size",
+    "desktop-screen-size",
+    "window-size",
+    "window screen width",
+    "window screen height",
+    "angular, react, vue, vue3, javascript, Svelte, vanilla screen size"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=17 || ^18 || ^19",
+    "react-dom": ">=17 || ^18 || ^19",
+    "vue": "^3.2.0",
+    "@angular/core": ">=14",
+    "rxjs": ">=7",
+    "svelte": "^4 || ^5"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ananay-nag/web-device-info.git"
+  },
+  "author": "Ananay Nag",
+  "contributors": [
+    {
+      "name": "Ananay Nag",
+      "email": "ananaynag1994s@gmail.com",
+      "url": "https://avatars.githubusercontent.com/u/36204888?s=48&v=4"
+    }
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
