@@ -1,0 +1,6 @@
+export * as AngularDeviceInfo from "./angular"
+export * from "./core"
+export * as JSDeviceInfo from "./js"
+export * as ReactDeviceInfo from "./react"
+export * as SvelteDeviceInfo from "./svelte"
+export * as VueDeviceInfo from "./vue3"
